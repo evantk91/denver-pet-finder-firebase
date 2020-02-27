@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Zhi+Mang+Xing&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lemonada&display=swap');
+
+
+body{
+    margin:0px;
+    background-color: lightskyblue;
+}
+
+main{
+    padding-bottom: 70px;
+}
+
+.page-header{
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    font-family: 'Lobster', cursive;
+}
+
+#create-user{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15%;
+}
+
+#current-user-select{
+    display:flex;
+    justify-content: center;
+}
+
+
+#sign-up-button{
+    margin-left: 10px;
+}
+.page-header{
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    font-family: 'Lobster', cursive;
+    width:100%;
+    top:0;
+
+}
+
+nav{
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+#nav-bar{
+    list-style: none;
+    display:flex; 
+    justify-content: center;
+    background-color:black;
+    color: white;
+    margin-top:0px;
+    padding-top:5px;
+    margin-bottom: 0px;
+    padding-right: 5%;
+}
+
+.nav-option{
+    cursor: pointer;
+    width: 20%;
+    text-align: center;
+}
+.nav-option:hover {background-color: darkgray;}
+
+
+#new-user-nav{
+    padding-bottom:5px;
+
+}
+#new-user-form{
+    display:flex;
+    flex-direction: row;
+    color: white; 
+    text-align:center;
+}
+
+#home-page {
+    cursor: pointer;
+}
+
+#current-users{
+    cursor: pointer;
+}
+
+#colorado-shelters{
+    cursor: pointer;
+}
+
+#browse-pets-header{
+    text-align: center;
+    font-family: 'Lemonada', cursive;
+
+}
+
+#available-animal-container{
+    display:flex;
+}
+
+.animal-container{
+    display:flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 20rem;
+    padding-bottom: 30px;
+}
+
+.animal-details-container{
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.animal-image{
+    width: 600px;
+}
+
+.animal-image-container{
+    display:flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    flex-direction: column;
+    background-color: gray;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+
+#footer p {
+    margin: 0px;
+}

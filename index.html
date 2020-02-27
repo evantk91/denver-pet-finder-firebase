@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <title>Flatiron School Denver Adoptable Animal Finder</title>
+    <script src="app.js" defer></script>
+
+</head>
+<body>
+    <header class="page-header">
+        <h1>Welcome to the Flatiron School Denver Animal Finder!!</h1>
+    </header>
+        <nav>
+            <ul id="nav-bar">
+                <ul id="new-user-nav" class="nav-option">New user?
+                </ul>
+                <li id="current-users" class="nav-option">Current Users
+                </li>
+                <li id="browse-pets" class="nav-option">Browse Available Pets</li>
+                <li id="colorado-shelters" class="nav-option">Colorado Shelters</li>
+                
+            </ul>
+            
+        </nav>
+        <main>
+
+            <h2 id="featured-animal-h2"></h2>
+            <section class="featured-animal-container">
+                <section id = "forms-container" class = "featured-animal-section-item">
+                    <li id="new-user-form" class = "form"> 
+                        <form action="http://localhost:3000/users" method="POST" id="create-user" style="opacity: 0";>New User: 
+                            <input type="text" name="name" placeholder="Name">
+                            <input type="text" name="email" placeholder="Email">
+                            <input type="submit" id="new-user-submit">
+                        </form>
+                    </li>
+                    <section id="current-user-select" style="opacity:0" class = "form">
+                        Choose A User:
+                        <select name="name" id="user-dropdown"></select>
+                        <input type="submit" value="Go to user page" id="go-to-user-page">
+                    </section>  
+                </section>
+                <section id="featured-animal" class = "featured-animal-section-item"></section>
+                <section id="featured-animal-info" class = "featured-animal-section-item"></section>
+            </section>
+
+                        
+    </main>
+</body>
+            <footer id="footer">
+                <p>Created with <i class="fa fa-heart"></i></p>
+                <p>By Evan Greer and Ben Tagtow</p>
+            </footer>
+</html>

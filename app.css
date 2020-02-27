@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Zhi+Mang+Xing&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body{
+    margin:0px;
+    background-color: lightskyblue;
+}
+main{
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+
+}
+
+#create-user{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+
+    color: black;
+}
+
+#current-user-select{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem 1rem; 
+    box-sizing: border-box;
+
+}
+
+
+
+.page-header{
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    font-family: 'Lobster', cursive;
+    width:100%;
+    top:0;
+
+}
+
+nav{
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+#nav-bar{
+    list-style: none;
+    display:flex; 
+    justify-content: center;
+    background-color:black;
+    color: white;
+    margin-top:0px;
+    padding-top:5px;
+    margin-bottom: 0px;
+    padding-right: 5%;
+
+
+}
+.nav-option{
+    cursor: pointer;
+    width: 20%;
+    text-align: center;
+}
+.nav-option:hover {background-color: darkgray;}
+
+
+
+#new-user-nav{
+    padding-bottom:5px;
+
+}
+
+#forms-container{
+    display:flex; 
+    justify-content: flex-start;
+    flex-direction: column;
+
+
+}
+#new-user-form{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem 1rem; 
+    box-sizing: border-box;
+
+}
+.form{
+    width: 50%;
+}
+
+.featured-animal-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.featured-animal-section-item{
+    width: 33%;
+    margin: 3rem;
+}
+
+#featured-animal{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+#featured-animal-h2{
+    display:flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 25px;
+    margin-bottom: 0;
+
+}
+#featured-animal-image{
+    height:28rem;
+    border-radius: 50px;
+    position:static;
+}
+#featured-animal-info{
+    display:flex; 
+    flex-direction: column;
+    padding-top: 2%;
+}
+
+
+#footer {
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    flex-direction: column;
+    background-color: gray;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+
+#footer p {
+    margin: 0px;
+}

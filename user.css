@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Zhi+Mang+Xing&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body{
+    margin:0px;
+    background-color: lightskyblue;
+}
+
+nav{
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#nav-bar{
+    padding-top: 5px;   
+    padding-bottom: 5px; 
+}
+
+#nav-bar, #add-favorite{
+    list-style: none;
+    display:flex; 
+    justify-content: space-around;
+    align-items: center;
+    background-color:black;
+    color: white;
+    margin-top:0px;
+    margin-bottom: 0px
+}
+.nav-item{
+    padding-bottom: 0;
+}
+
+.user-header{
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    font-family: 'Zhi Mang Xing', cursive;
+    font-family: 'Lobster', cursive;
+}
+
+.nav-item:hover {background-color: darkgray;}
+
+
+main{
+    padding-top: 30px;
+    display:flex;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+
+#favorite-animals-container{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.animal-container{
+    display:flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+    
+}
+
+.animal-details-container{
+    display:flex; 
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.animal-image{
+    width: 600px;
+}
+
+.animal-image-container{
+    display:flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    flex-direction: column;
+    background-color: gray;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+}
+
+#footer p {
+    margin: 0px;
+}
+
+#home-page {
+    cursor: pointer;
+}
+
+#colorado-shelters{
+    cursor: pointer;
+}
+#browse-pets{
+    cursor: pointer;
+}
+
+.nav-li{
+    width: 33%;
+    text-align: center;
+}

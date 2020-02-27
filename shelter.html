@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shelter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+
+    <script src="shelter.js" defer></script>
+    <title>Colorado Shelters</title>
+</head>
+<body>
+    <header id="page-header">
+        <h1>Colorado Shelters</h1>
+    </header>
+    <nav>
+        <ul id="nav-bar">
+            <li id="home" class="nav-option">Home</li>
+            <ul id="new-user-nav" class="nav-option">New user?
+                <li id="new-user-form">
+                    <form action="http://localhost:3000/users" method="POST" id="create-user" style="display: none";>
+                        <input type="text" name="name" placeholder="Name">
+                        <input type="text" name="email" placeholder="Email">
+                        <input type="submit">
+                    </form>
+                </li>
+            </ul>
+            <li id="current-users" class="nav-option">
+                Current Users
+                    <section id="current-user-select" style="display:none">            
+                        <select name="name" id="user-dropdown"></select>
+                        <input type="submit" value="Go to user page" id="go-to-user-page">
+                    </section>  
+            </li>
+            <li id="browse-pets" class="nav-option">Browse Available Pets</li>
+        </ul>
+
+    </nav>
+    <main>
+        <summary id="summary">Here are some local shelters. To visit their website, click on the card. Or visit them in person at the address below!</summary>
+        <section class="shelter-container">
+        </section>
+    </main>
+    <footer id="footer">
+        <p>Created with <i class="fa fa-heart"></i></p>
+        <p>By Evan Greer and Ben Tagtow</p>
+    </footer>
+
+    
+</body>
+</html>
