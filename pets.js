@@ -18,8 +18,8 @@ newUserNav.addEventListener("click", () => {
     hideElement(createUser)
   })
 
-usersURL = "http://localhost:3000/users"
-animalsURL = "http://localhost:3000/animals"
+usersURL = "https://denver-pet-finder.herokuapp.com/users"
+animalsURL = "https://denver-pet-finder.herokuapp.com/animals"
 
 
 fetch(usersURL)
@@ -73,7 +73,7 @@ function addAnimal(animals){
 
         let updateForm = document.createElement('form')
 
-        updateForm.action = `http://localhost:3000/animals/${animal.id}`
+        updateForm.action = `https://denver-pet-finder.herokuapp.com/animals/${animal.id}`
         updateForm.method = "POST"
         updateForm.innerHTML = `
         <input type = "submit" name = "status" value = "Adopted">
@@ -82,7 +82,7 @@ function addAnimal(animals){
 
         let deleteForm = document.createElement('form')
 
-        deleteForm.action = `http://localhost:3000/animals/${animal.id}`
+        deleteForm.action = `https://denver-pet-finder.herokuapp.com/animals/${animal.id}`
         deleteForm.method = "POST"
         deleteForm.innerHTML = `
         <input type = "submit" value = "Remove">
@@ -115,15 +115,15 @@ function addUserOptions(users) {
 }
 
 function goToHomePage() {
-    window.location = `http://localhost:3001/index.html`
+    window.location = `https://denver-pet-finder.firebaseapp.com/index.html`
 }
 
 function goToSheltersPage() {
-    window.location = `http://localhost:3001/shelter.html`
+    window.location = `https://denver-pet-finder.firebaseapp.com/shelter.html`
 }
 
 function goToUserPage(){
-    window.location = `http://localhost:3001/user.html?id=${userDropDown.value}`
+    window.location = `https://denver-pet-finder.firebaseapp.com/user.html?id=${userDropDown.value}`
 }
 
 function hideElement(element) {
@@ -134,6 +134,6 @@ function hideElement(element) {
 
 
 function goToAvailablePets(){
-    window.location = `http://localhost:3001/pets.html`
+    window.location = `https://denver-pet-finder.firebaseapp.com/pets.html`
   }
 

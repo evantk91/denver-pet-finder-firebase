@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     coloradoSheltersLink.addEventListener("click", goToShelters)
 })
 
-fetch(`http://localhost:3000/users/${id}`)
+fetch(`https://denver-pet-finder.herokuapp.com/users/${id}`)
     .then(parseJSON)
     .then(user => {
         (displayUser(user))
@@ -89,8 +89,9 @@ function addAnimalOptions(animal){
     animalOption.value = animal.id 
     favoritesDropDown.append(animalOption)
 }
+
 function fetchAnimals(){
-    fetch('http://localhost:3000/animals/')
+    fetch('https://denver-pet-finder.herokuapp.com/animals/')
         .then(parseJSON)
         .then(animals => {
             animals.map(addAnimalOptions)
@@ -104,13 +105,13 @@ function parseJSON(response) {
 }
 
 function goToHomePage() {
-    window.location = `http://localhost:3001/index.html`
+    window.location = `https://denver-pet-finder.firebaseapp.com/index.html`
 }
 
 function goToBrowseAnimals() {
-    window.location = `http://localhost:3001/pets.html`
+    window.location = `https://denver-pet-finder.firebaseapp.com/pets.html`
 }
 
 function goToShelters() {
-    window.location = `http://localhost:3001/shelter.html`
+    window.location = `https://denver-pet-finder.firebaseapp.com/shelter.html`
 }

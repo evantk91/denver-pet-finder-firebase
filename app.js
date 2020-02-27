@@ -73,8 +73,6 @@ function displayAnimal(animal) {
     featuredAnimalInfo.append(animalAge, animalGender, animalBreed)
 }
 
-
-
 function fetchUsers(){
 
   fetch(usersURL)
@@ -89,15 +87,15 @@ function fetchUsers(){
 }
 
 function goToUserPage(){
-  window.location = `http://localhost:3001/user.html?id=${userDropDown.value}`
+  window.location = `https://denver-pet-finder.firebaseapp.com/user.html?id=${userDropDown.value}`
 }
 
 function goToShelterPage(){
-  window.location = `http://localhost:3001/shelter.html`
+  window.location = `https://denver-pet-finder.firebaseapp.com/shelter.html`
 }
 
 function goToAvailablePets(){
-  window.location = `http://localhost:3001/pets.html`
+  window.location = `https://denver-pet-finder.firebaseapp.com/pets.html`
 }
 
 function hideElement(element) {

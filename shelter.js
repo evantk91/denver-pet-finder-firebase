@@ -20,14 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function fetchShelters(){
-    fetch('http://localhost:3000/shelters')
+    fetch('https://denver-pet-finder.herokuapp.com/shelters')
         .then(response => response.json())
         .then(shelterDetails)
 }
-
-    
-
-
 
 function shelterDetails(shelters){
     shelters.forEach(shelterCardCreator)
@@ -57,10 +53,11 @@ function shelterCardCreator(shelter){
 }
 
 function goHome(){
-    window.location = "http://localhost:3001/"
+    window.location = "https://denver-pet-finder.firebaseapp.com/"
 }
+
 function createUserOptions(){
-    fetch("http://localhost:3000/users")
+    fetch("http://denver-pet-finder.herokuapp.com/users")
         .then(response => response.json())
         .then(users => users
                 .map(user=> {
@@ -73,17 +70,16 @@ function createUserOptions(){
 
 
 function goToUserPage(){
-  window.location = `http://localhost:3001/user.html?id=${userDropDown.value}`
+  window.location = `https://denver-pet-finder.firebaseapp.com/user.html?id=${userDropDown.value}`
 }
 
 function goToShelterPage(){
-  window.location = `http://localhost:3001/shelter.html`
+  window.location = `https://denver-pet-finder.firebaseapp.com/shelter.html`
 }
 
 function goToAvailablePets(){
-  window.location = `http://localhost:3001/pets.html`
+  window.location = `https://denver-pet-finder.firebaseapp.com/pets.html`
 }
-
 
 currentUser.addEventListener("click", () => {
     hideElement(currentUserSelect)
@@ -93,8 +89,6 @@ newUserNav.addEventListener("click", () => {
     hideElement(createUser)
 })
 
-  
-  
 function hideElement(element) {
     if (element.style.display === "none") {
     element.style.display = "block";
